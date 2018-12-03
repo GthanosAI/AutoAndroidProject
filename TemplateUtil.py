@@ -31,11 +31,10 @@ def template_text(content, param):
     return ret.safe_substitute(param)
 
 
-def rename_dir(source, dst):
-    cp_dir(source, dst)
-
-    shutil.rmtree(source)
-
+def rename_dir(source="", dst=""):
+    # cp_dir(source, dst)
+    # shutil.rmtree(source)
+    shutil.move(source, dst)
 
 def cp_dir(source, dst):
     shutil.copytree(src=source, dst=dst)
