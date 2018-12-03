@@ -1,4 +1,4 @@
-from TemplateUtil import template_file, cp_dir, rename_dir
+from TemplateUtil import template_file, cp_dir, rename_dir, list_file
 import os, shutil
 
 
@@ -49,6 +49,26 @@ class AppConfig:
             template_file(param['file_name'], param['param'])
 
 
+class CodeConfig:
+    def __init__(self, root_dir, project_name, package_name=""):
+        self.package_name = package_name
+        self.root_file = root_dir + "/app/src/main/java/" + package_name.replace(".", '/')
+
+    def make(self):
+        print(self.root_file)
+        file_list = list_file(self.root_file, suffix='java')
+
+        print(file_list)
+
+        for file in file_list:
+            param = {
+                "file_name": file,
+                'param': {'package_name': self.package_name}
+            }
+
+            template_file(param['file_name'], param['param'])
+
+
 class AndroidProjectCreator:
 
     def __init__(self, package_name, project_name):
@@ -73,18 +93,24 @@ class AndroidProjectCreator:
         # 2. rename source file name
         src_dir = dst_dir + '/app/src/main/java/com/ifog/myapplication'
         new_src_dir = dst_dir + '/app/src/main/java/' + self.project_param['package_name'].replace(".", '/')
-
         rename_dir(src_dir, new_src_dir)
+
+        test_src_dir = dst_dir + "/app/src/androidTest/java/com/ifog/myapplication"
+        new_test_src_dir = dst_dir + '/app/src/androidTest/java/' + self.project_param['package_name'].replace(".", '/')
+        rename_dir(test_src_dir, new_test_src_dir)
+
 
         # 3. config app and config gradle config
         app_config = AppConfig(dst_dir)
         gradle_config = GradleConfig(dst_dir)
+        code_config = CodeConfig(dst_dir, self.project_param['project_name'], self.project_param['package_name'])
 
         app_config.set_param(self.project_param['package_name'], self.project_param['project_name'])
         gradle_config.set_param(self.project_param['plugin_version'], self.project_param['build_version'])
 
         app_config.make()
         gradle_config.make()
+        code_config.make()
 
 
 if __name__ == '__main__':

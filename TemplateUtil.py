@@ -13,6 +13,19 @@ def template_file(source, param):
     return source
 
 
+def list_file(root, suffix=None):
+    files = []
+    for main_dir, sub_dir, file_name_list in os.walk(root):
+        for file_name in file_name_list:
+            full_file = os.path.join(main_dir, file_name)
+            if suffix is not None:
+                if file_name.split('.')[-1] == suffix:
+                    files.append(full_file)
+            else:
+                files.append(file_name)
+    return files
+
+
 def template_text(content, param):
     ret = Template(content)
     return ret.safe_substitute(param)
@@ -30,3 +43,8 @@ def cp_dir(source, dst):
 
 def cp_file(source, dest):
     shutil.copy(src=source, dst=dest)
+
+
+if __name__ == '__main__':
+    ret = list_file("/Users/jacky/PycharmProjects/AutoAndroidProject/res/app/app/src/main/java", suffix='java')
+    print(ret)
