@@ -1,5 +1,5 @@
 from TemplateUtil import template_file, cp_dir, rename_dir, list_file
-import os, shutil
+import os, shutil,sys
 
 
 class GradleConfig:
@@ -28,6 +28,7 @@ class AppConfig:
     def __init__(self, project_dir):
         self.config = {
             "xml_package_file": project_dir + "/app/src/main/AndroidManifest.xml",
+            'build_file': project_dir + "/app/build.gradle",
             'settings_project_file': project_dir + '/settings.gradle'
         }
 
@@ -41,6 +42,10 @@ class AppConfig:
             {
                 "file_name": self.config['settings_project_file'],
                 'param': {'project_name': project_name}
+            },
+            {
+                "file_name": self.config['build_file'],
+                'param': {'package_name': package_name}
             }
         ]
 
@@ -99,7 +104,6 @@ class AndroidProjectCreator:
         new_test_src_dir = dst_dir + '/app/src/androidTest/java/' + self.project_param['package_name'].replace(".", '/')
         rename_dir(test_src_dir, new_test_src_dir)
 
-
         # 3. config app and config gradle config
         app_config = AppConfig(dst_dir)
         gradle_config = GradleConfig(dst_dir)
@@ -111,6 +115,12 @@ class AndroidProjectCreator:
         app_config.make()
         gradle_config.make()
         code_config.make()
+
+    def add_base(self):
+        current_dir = os.path.dirname(os.path.realpath(__file__))
+        source_dir = current_dir + '/res/app'
+        os.system("git submodule add git@git.gegolab.com:hewei/AndroidBaseFW.git " + source_dir)
+        os.system("git submodule update --init --recursive")
 
 
 if __name__ == '__main__':
