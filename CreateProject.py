@@ -1,5 +1,5 @@
 from TemplateUtil import template_file, cp_dir, rename_dir, list_file
-import os, shutil,sys
+import os, shutil, sys
 
 
 class GradleConfig:
@@ -95,6 +95,9 @@ class AndroidProjectCreator:
 
         cp_dir(source_dir, dst_dir)
 
+        # 2.1
+        self.add_base()
+
         # 2. rename source file name
         src_dir = dst_dir + '/app/src/main/java/com/ifog/myapplication'
         new_src_dir = dst_dir + '/app/src/main/java/' + self.project_param['package_name'].replace(".", '/')
@@ -117,10 +120,7 @@ class AndroidProjectCreator:
         code_config.make()
 
     def add_base(self):
-        current_dir = os.path.dirname(os.path.realpath(__file__))
-        source_dir = current_dir + '/res/app'
-        os.system("git submodule add git@git.gegolab.com:hewei/AndroidBaseFW.git " + source_dir)
-        os.system("git submodule update --init --recursive")
+        pass
 
 
 if __name__ == '__main__':

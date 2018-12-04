@@ -1,0 +1,6 @@
+[submodule "res/app/AndroidBaseFW"]
+	path = res/app/AndroidBaseFW
+	url = git@git.gegolab.com:hewei/AndroidBaseFW.git
+[submodule "res/app/mbase"]
+	path = res/app/mbase
+	url = git@git.gegolab.com:hewei/AndroidBaseFW.git
