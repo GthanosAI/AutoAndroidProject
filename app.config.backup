@@ -1,0 +1,50 @@
+[config]
+projectDir=/output/
+basePackage=com.luckytrip
+project=casino
+dataCommonBase=com.gego
+# if you wan to user mac, set system = mac and install 'gsed' like below:
+#   brew install gsed
+system=linux
+
+[api]
+domain=[dom1,dom2,dom3]
+method=p #p:post, g:get, d:delete, p:put
+param=r[body]|s[id]|i[ps]|l[machineId], #r:request body, s:string, i:int, l:long
+
+#[page]
+#subPackage=home[c] c:normal, p:pull refresh, m:pull up and down,
+#model=HomeData
+#view=HomeView[fdr] [f:fragment, a:activity, v:layout], [d/c:dataBinding, c:normal] ,[r:recycleView, c:normal]
+#presenter=HomePresenter
+
+[page]
+subPackage=home[p]
+model=HomeData
+vm=HomeData
+view=HomeView[fd]
+presenter=HomePresenter
+
+[page]
+subPackage=mine[p]
+model=MineData
+vm=MineData
+view=MineView[f]
+presenter=MinePresenter
+
+[page]
+subPackage=home.detail
+model=DetailBean
+vm=DetailBean
+view=DetailBean[fdr]
+viewItem=DetailItem
+
+[view]
+components=[] #[t:TextView, i:ImageView, v:View, r:RecycleView, c:ConstrainLayout, rl:RelativeLayout, ll:LinearLayout]
+
+
+
+
+
+
+
