@@ -13,4 +13,6 @@ class VMCreate:
         pass
 
 
-
+class ViewCreate:
+    def make(self):
+        pass
