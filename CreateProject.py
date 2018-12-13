@@ -1,5 +1,5 @@
-from TemplateUtil import template_file, cp_dir, rename_dir, list_file
-import os, shutil, sys
+from tool.TemplateUtil import template_file, cp_dir, rename_dir, list_file
+import os, shutil
 
 
 class GradleConfig:

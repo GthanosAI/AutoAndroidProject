@@ -1,4 +1,4 @@
-from TemplateUtil import template_text
+from tool.TemplateUtil import template_text
 
 
 def ImageView(name, scaleType="fitXY"):

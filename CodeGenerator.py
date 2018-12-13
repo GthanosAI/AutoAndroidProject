@@ -1,4 +1,4 @@
-from ConfigParser import PageBean, AppConfig
+from ProjectParser import PageBean, AppConfig
 
 
 class BaseGenerator:
@@ -10,15 +10,35 @@ class BaseGenerator:
 
 
 class PageGenerator(BaseGenerator):
-    def __init__(self, pageBean):
+    def __init__(self, pageBean, appBean):
         BaseGenerator.__init__(self)
         self.pageBean = pageBean
+        self.appBean = appBean
 
-    def generate(self):
+    def make_param(self):
         pass
 
+    def generate(self):
+        """"
+        FragmentWithAdapter:
+                        page_name["xxx"],
+                        sub_path,
+                        layout_prama[""],
+                        layout_type[Grid, Linear] ,
+                        adapter_name,
+                        model_name,
+                        page_name_lowcase
 
-
+        Adapter: package_name
+                 sub_path
+                 adapter_name
+                 model_path
+                 model_name
+                 page_name
+                 adapter_name_lowcase
+        return:
+        """
+        pass
 
 
 if __name__ == '__main__':

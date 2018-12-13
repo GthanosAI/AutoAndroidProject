@@ -1,4 +1,4 @@
-package ${package_name}.{sub_name};
+package ${package_name}.{sub_path};
 
 import ${package_name}.R;
 import ${package_name}.base.BaseMvpDsFragment;
@@ -11,7 +11,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
 
-public class ${page_name}Fragment extends BaseMvpDsFragment<${page_name}Presenter, Fragment${page_name}Binding> implements IHomeView {
+public class ${page_name}Fragment extends BaseMvpDsFragment<${page_name}Presenter, Fragment${page_name}Binding> implements I${page_name}View {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,7 +24,7 @@ public class ${page_name}Fragment extends BaseMvpDsFragment<${page_name}Presente
 
     @Override
     protected int getLayoutId() {
-        return R.layout.fragment_${page_name};
+        return R.layout.fragment_${page_name_lowcase};
     }
 
     @Override
