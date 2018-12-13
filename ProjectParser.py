@@ -21,6 +21,27 @@ class Dict2Obj(object):
             value = parser(section, key, key_values[key])
             key_values[key] = value
 
+    def get_fragment_name(self):
+        return ""
+
+    def get_presenter_name(self):
+        return ""
+
+    def get_adapter_name(self):
+        return ""
+
+    def get_iview_name(self):
+        return ""
+
+    def get_layout_fragment_name(self):
+        return ""
+
+    def get_layout_item_name(self):
+        return ""
+
+    def get_mode_name(self):
+        return ""
+
     def get_path_param(self, fullpath):
         paths = fullpath.split('.')
 
@@ -55,42 +76,10 @@ class PageBean(Dict2Obj):
         self.itemModel = ""
         self.adapterName = ""
         self.pageNum = 0
+        self.types = []
 
-    def get_view_hierarchy(self, content=""):
-        leftB = content.find('[')
-        rightB = content.rfind(']')
-
-        if leftB >= 0 and rightB >= 0:
-            pass
-
-        realBody = content[leftB + 1: rightB]
-
-        leftB = realBody.find('[')
-        if leftB > 0:
-            item = {'value': "", 'content': ''}
-            parentLeft = realBody[0:leftB]
-            item['value'] = parentLeft
-            tmp = realBody[leftB + 1:]
-            self.get_odd_right_bracket(tmp)
-
-        else:
-            realBody = content[leftB + 1: rightB]
-
-        return realBody
-
-    def get_odd_right_bracket(self, content):
-        index = 0
-        findIndex = 0
-        for a in content:
-            if index < 0:
-                break
-            if a == '[':
-                index = index + 1
-            elif a == ']':
-                index = index - 1
-
-            findIndex = findIndex + 1
-        print(findIndex, content[0:findIndex])
+    def is_adapter(self):
+        return 'a' in self.types
 
     def make(self, parser, pageName):
         self.pageNum = pageName
@@ -99,10 +88,10 @@ class PageBean(Dict2Obj):
         (pageName, subPath) = self.get_path_param(self.subPackage)
         (modelName, modelPath) = self.get_path_param(self.itemModel)
 
-        types = self.type.rstrip("|").lstrip("|").split("|")
+        self.types = self.type.rstrip("|").lstrip("|").split("|")
 
         adapterName = ""
-        if 'a' in types:
+        if 'a' in self.types:
             adapterName = self.adapterName
 
         params = {
@@ -111,7 +100,7 @@ class PageBean(Dict2Obj):
             'model_name': modelName,
             'model_path': modelPath,
             'adapter_name': adapterName,
-            'types': types,
+            'types': self.types,
         }
 
         return params
@@ -130,6 +119,9 @@ class AppConfig:
             return self.__configParser.get(section, key)
         else:
             return default
+
+    def get_java_source_path(self):
+        return ""
 
     def parser(self):
         pass
@@ -161,4 +153,3 @@ if __name__ == '__main__':
     #
 
     pageBean = PageBean()
-    pageBean.get_view_hierarchy('[l[c[i,i,r,i,i], i],c[i,i]]')

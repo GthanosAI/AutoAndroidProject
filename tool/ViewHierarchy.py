@@ -1,5 +1,7 @@
 from ViewConstant import get_map
 
+viewCount = 0
+
 
 class ResultBean:
     def __init__(self, letter, content='', name=""):
@@ -52,7 +54,6 @@ class ContentViewHierarchy:
 
     def __init__(self, content):
         self.content = content
-        self.view_index = 0
 
     def make(self):
         return self.__get_view_hierarchy(self.content)
@@ -64,8 +65,10 @@ class ContentViewHierarchy:
         return self.__get_odd_right_bracket(content)
 
     def get_item(self, start, end, content, value):
-        self.view_index = self.view_index + 1
-        name = 'v' + value + str(self.view_index)
+        global viewCount
+        viewCount = viewCount + 1
+        print(viewCount)
+        name = 'v' + value + str(viewCount)
         return ResultBean(value, content, name)
 
     def __get_odd_right_bracket(self, content):
@@ -91,8 +94,6 @@ class ContentViewHierarchy:
                 continue
 
             if mayBeNext and ((a == ',')
-                    #
-                    # or (contentLength == findIndex)
             ):
                 mayBeNext = False
                 item = self.get_item(start_index,
@@ -157,14 +158,4 @@ def make(root='', content="", xml_name=""):
 
 
 if __name__ == '__main__':
-    make('L', '[c[i,i]]', 'fragment_layout.xml')
-
-    # result = ResultBean("l", "[c[i,i,r,i,i],i,c[i,i]]", "root")
-    view = ContentViewHierarchy('d,a[c[i,i,r]],b,c[1,2]')
-    # result.make()
-    #
-    #
-    # result.log()
-    # ret = view.make()
-    # print(ret)
-    # print(len(ret))
+    make('L', '[c[i,i,r[t,i]]]', 'fragment_layout.xml')
