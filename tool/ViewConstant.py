@@ -1,6 +1,20 @@
 from tool.TemplateUtil import template_text
 
 
+def get_map(key):
+    global VIEW_MAP
+    VIEW_MAP = {
+        'L': layout,
+        'i': ImageView,
+        't': TextView,
+        'R': RecyclerView,
+        'l': LinearLayout,
+        'r': RelativeLayout,
+        'c': ConstrainLayout
+    }
+    return VIEW_MAP.get(key)
+
+
 def ImageView(name, scaleType="fitXY"):
     imageview = '''
     <ImageView
@@ -46,7 +60,7 @@ def RecyclerView(name):
     })
 
 
-def layout(items):
+def layout(name, items=[]):
     head = """<?xml version="1.0" encoding="utf-8"?>
     <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
