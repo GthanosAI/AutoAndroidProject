@@ -33,7 +33,9 @@ class ResultBean:
     def make_view(self):
         viewFunc = get_map(self.startLetter)
         if self.is_view():
+            print(self.startLetter)
             ret_content = viewFunc(self.name)
+
         else:
             viewGroup = viewFunc
             items = []
@@ -45,9 +47,9 @@ class ResultBean:
         return ret_content
 
     def log(self):
-        print(self.view_content)
-        # for item in self.childList:
-        #     item.log()
+        print(self.startLetter, self.view_content, len(self.childList))
+        for item in self.childList:
+            item.log()
 
 
 class ContentViewHierarchy:
@@ -65,9 +67,9 @@ class ContentViewHierarchy:
         return self.__get_odd_right_bracket(content)
 
     def get_item(self, start, end, content, value):
+        print(content, value)
         global viewCount
         viewCount = viewCount + 1
-        print(viewCount)
         name = 'v' + value + str(viewCount)
         return ResultBean(value, content, name)
 
@@ -82,18 +84,28 @@ class ContentViewHierarchy:
         startLetter = None
         contentLength = len(content)
 
+        if contentLength == 0:
+            return []
+
+        if contentLength == 1:
+            item = self.get_item(0, 1, content, content)
+            ret.append(item)
+            return ret
+
         if contentLength > 1:
             startLetter = content[0]
 
         for a in content:
             findIndex = findIndex + 1
-            if findIndex == 0 and content[1] == ',':
+            if findIndex == 0 and contentLength > 1 and content[1] == ',':
                 mayBeNext = True
                 start_index = findIndex
                 startLetter = a
                 continue
 
             if mayBeNext and ((a == ',')
+                    #
+                    # or (contentLength == findIndex)
             ):
                 mayBeNext = False
                 item = self.get_item(start_index,
@@ -158,4 +170,8 @@ def make(root='', content="", xml_name=""):
 
 
 if __name__ == '__main__':
-    make('L', '[c[i,i,r[t,i]]]', 'fragment_layout.xml')
+    # a = 'i'
+    # c = ContentViewHierarchy(a)
+    # c.make()
+
+    make('L', '[c[i,t,i,i,r[i,i],t,l[t,t],l[t,t],r[i],i]]', 'fragment_layout.xml')

@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f945f7bf-ce0f-4389-b1ee-998fc940d108" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/CodeGenerator.py" afterPath="$PROJECT_DIR$/CodeGenerator.py" />
-      <change beforePath="$PROJECT_DIR$/ProjectParser.py" afterPath="$PROJECT_DIR$/ProjectParser.py" />
-      <change beforePath="$PROJECT_DIR$/app.config" afterPath="$PROJECT_DIR$/app.config" />
-      <change beforePath="$PROJECT_DIR$/res/model/ModelBean.java" afterPath="$PROJECT_DIR$/res/mvp/ModelBean.java" />
       <change beforePath="$PROJECT_DIR$/tool/ViewHierarchy.py" afterPath="$PROJECT_DIR$/tool/ViewHierarchy.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,7 +20,7 @@
     <SUITE FILE_PATH="coverage/AutoAndroidProject$CodeGenerator.coverage" NAME="CodeGenerator Coverage Results" MODIFIED="1544607995371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/AutoAndroidProject$ViewConstant.coverage" NAME="ViewConstant Coverage Results" MODIFIED="1544420919879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/AutoAndroidProject$ComponentCreate.coverage" NAME="ComponentCreate Coverage Results" MODIFIED="1544437229842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/AutoAndroidProject$ViewHierarchy.coverage" NAME="ViewHierarchy Coverage Results" MODIFIED="1544716962604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tool" />
+    <SUITE FILE_PATH="coverage/AutoAndroidProject$ViewHierarchy.coverage" NAME="ViewHierarchy Coverage Results" MODIFIED="1544768219468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tool" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -38,24 +34,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FragmentWithAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/mvp/FragmentWithAdapter.java">
+      <file leaf-file-name="CodeGenerator.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CodeGenerator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="-206">
+              <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#45#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CodeGenerator.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CodeGenerator.py">
+      <file leaf-file-name="app.config.backup" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.config.backup">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="48" column="26" lean-forward="true" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#45#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="311">
+              <caret line="34" column="6" lean-forward="true" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -70,11 +66,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ModelBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/mvp/ModelBean.java">
+      <file leaf-file-name="ViewConstant.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tool/ViewConstant.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="180">
+              <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -90,21 +86,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PresenterWithAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/mvp/PresenterWithAdapter.java">
+      <file leaf-file-name="ViewHierarchy.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tool/ViewHierarchy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="607">
+              <caret line="176" column="47" lean-forward="false" selection-start-line="176" selection-start-column="47" selection-end-line="176" selection-end-column="47" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ViewHierarchy.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tool/ViewHierarchy.py">
+      <file leaf-file-name="fragment_layout.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tool/fragment_layout.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="30" column="21" lean-forward="false" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+            <state relative-caret-position="58">
+              <caret line="5" column="48" lean-forward="true" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -125,8 +121,8 @@
       <file leaf-file-name="app.config" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.config">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="33" column="24" lean-forward="true" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+            <state relative-caret-position="188">
+              <caret line="38" column="14" lean-forward="false" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -143,13 +139,8 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>adapter_name_lowcase</find>
-      <find>sub_name</find>
-      <find>ConfigParser</find>
-      <find>fullpath</find>
       <find>layout_type</find>
       <find>findIndex</find>
-      <find>__get_odd_right_bracket</find>
       <find>start_index</find>
       <find>content</find>
       <find>startLetter</find>
@@ -161,10 +152,8 @@
       <find>layout(</find>
       <find>view_content</find>
       <find>make_view</find>
-      <find>print</find>
       <find>isview</find>
       <find>name</find>
-      <find>self.ge</find>
       <find>appBean</find>
       <find>PageGenerator</find>
       <find>pageBean</find>
@@ -173,6 +162,13 @@
       <find>self.appBean = appBean</find>
       <find>PageBean</find>
       <find>get_java_source_pathget_java_source_path</find>
+      <find>self.ge</find>
+      <find>__get_odd_right_bracket</find>
+      <find>make</find>
+      <find>tool.make()</find>
+      <find>RecyclerView</find>
+      <find>rpint</find>
+      <find>print</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -208,11 +204,11 @@
         <option value="$PROJECT_DIR$/res/mvp/IView.java" />
         <option value="$PROJECT_DIR$/ConfigParser.py" />
         <option value="$PROJECT_DIR$/tool/ViewConstant.py" />
-        <option value="$PROJECT_DIR$/tool/fragment_layout.xml" />
-        <option value="$PROJECT_DIR$/tool/ViewHierarchy.py" />
         <option value="$PROJECT_DIR$/app.config" />
         <option value="$PROJECT_DIR$/ProjectParser.py" />
         <option value="$PROJECT_DIR$/CodeGenerator.py" />
+        <option value="$PROJECT_DIR$/tool/ViewHierarchy.py" />
+        <option value="$PROJECT_DIR$/tool/fragment_layout.xml" />
       </list>
     </option>
   </component>
@@ -222,9 +218,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="408" />
-    <option name="y" value="133" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="102" />
+    <option name="y" value="183" />
     <option name="width" value="1415" />
     <option name="height" value="877" />
   </component>
@@ -352,7 +348,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.CodeGenerator (1)">
+  <component name="RunManager" selected="Python.ViewHierarchy">
     <configuration name="CodeGenerator (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -457,8 +453,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.CodeGenerator (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Python.ViewHierarchy" />
+        <item index="0" class="java.lang.String" itemvalue="Python.ViewHierarchy" />
+        <item index="1" class="java.lang.String" itemvalue="Python.CodeGenerator (1)" />
         <item index="2" class="java.lang.String" itemvalue="Python.CodeGenerator" />
         <item index="3" class="java.lang.String" itemvalue="Python.ComponentCreate" />
         <item index="4" class="java.lang.String" itemvalue="Python.ViewConstant" />
@@ -482,13 +478,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="3" y="23" width="1415" height="877" extended-state="6" />
+    <frame x="102" y="183" width="1415" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31093544" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26877472" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938075" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34387353" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32993445" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -515,6 +511,13 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tool/ViewHierarchy.py</url>
+          <line>34</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
@@ -525,7 +528,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="35" />
+      <option name="time" value="39" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -685,13 +688,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fragment_layout.txt" />
     <entry file="file://$PROJECT_DIR$/fragment_layout.xml" />
-    <entry file="file://$PROJECT_DIR$/app.config.backup">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/adapter/Adapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -757,46 +753,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tool/ViewConstant.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool/fragment_layout.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CreateProject.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="26" column="16" lean-forward="false" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool/ViewHierarchy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="30" column="21" lean-forward="false" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.config">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="33" column="24" lean-forward="true" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/mvp/FragmentWithAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -847,13 +803,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app.config.backup">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="34" column="6" lean-forward="true" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="38" column="14" lean-forward="false" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CodeGenerator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="48" column="26" lean-forward="true" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
+        <state relative-caret-position="-206">
+          <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CreateProject.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="26" column="16" lean-forward="false" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tool/ViewConstant.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tool/ViewHierarchy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="607">
+          <caret line="176" column="47" lean-forward="false" selection-start-line="176" selection-start-column="47" selection-end-line="176" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tool/fragment_layout.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="5" column="48" lean-forward="true" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
+          <folding />
         </state>
       </provider>
     </entry>
