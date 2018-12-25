@@ -33,7 +33,6 @@ class ResultBean:
     def make_view(self):
         viewFunc = get_map(self.startLetter)
         if self.is_view():
-            print(self.startLetter)
             ret_content = viewFunc(self.name)
 
         else:
@@ -67,7 +66,6 @@ class ContentViewHierarchy:
         return self.__get_odd_right_bracket(content)
 
     def get_item(self, start, end, content, value):
-        print(content, value)
         global viewCount
         viewCount = viewCount + 1
         name = 'v' + value + str(viewCount)
@@ -174,4 +172,4 @@ if __name__ == '__main__':
     # c = ContentViewHierarchy(a)
     # c.make()
 
-    make('L', '[c[i,t,i,i,r[i,i],t,l[t,t],l[t,t],r[i],i]]', 'fragment_layout.xml')
+    make('L', '[c[i,c[i,i,i,t,i,t]]]', 'fragment_layout.xml')

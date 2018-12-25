@@ -10,7 +10,8 @@ def get_map(key):
         'R': RecyclerView,
         'l': LinearLayout,
         'r': RelativeLayout,
-        'c': ConstrainLayout
+        'c': ConstrainLayout,
+        'v': View
     }
     return VIEW_MAP.get(key)
 
@@ -29,14 +30,26 @@ def ImageView(name, scaleType="fitXY"):
     })
 
 
+def View(name):
+    imageview = '''
+    <View
+            android:id="@+id/${name}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />'''
+
+    return template_text(imageview, {
+        'name': name,
+    })
+
+
 def TextView(name, textColor="#004c62", textSize="28px"):
     textView = """
     <TextView
                         android:id="@+id/${name}"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@{textColor}"
-                        android:textSize="@{textSize}"
+                        android:textColor="${textColor}"
+                        android:textSize="${textSize}"
                         tools:text="demodemo" />
     """
 
