@@ -24,7 +24,7 @@ public class ${page_name}Fragment extends BaseMvpDsFragment<${page_name}Presente
 
     @Override
     protected int getLayoutId() {
-        return R.layout.fragment_${page_name_lowcase};
+        return R.layout.${page_view_name};
     }
 
     @Override

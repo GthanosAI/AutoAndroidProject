@@ -1,6 +1,9 @@
+# coding=utf-8
 import ConfigParser
+from tool.Constant import *
 
-CONFIG = 'config'
+CONFIG = 'project'
+BUILd = 'build'
 PGAE = 'page'
 
 
@@ -21,44 +24,30 @@ class Dict2Obj(object):
             value = parser(section, key, key_values[key])
             key_values[key] = value
 
-    def get_fragment_name(self):
-        return ""
-
-    def get_presenter_name(self):
-        return ""
-
-    def get_adapter_name(self):
-        return ""
-
-    def get_iview_name(self):
-        return ""
-
-    def get_layout_fragment_name(self):
-        return ""
-
-    def get_layout_item_name(self):
-        return ""
-
-    def get_mode_name(self):
-        return ""
-
-    def get_path_param(self, fullpath):
-        paths = fullpath.split('.')
-
+    @staticmethod
+    def get_path_param(full_path):
+        paths = full_path.split('.')
         if len(paths) > 1:
             fileName = paths[-1]
-            subPath = fullpath.rstrip(fileName).rstrip('.')
+            subPath = full_path.rstrip(fileName).rstrip('.')
         else:
             fileName = paths[-1]
             subPath = ''
 
         return fileName, subPath
 
+    def get_param(self):
+        return None
+
     def log(self):
         print(self.__dict__)
 
 
-class AppBean(Dict2Obj):
+class ProjectBean(Dict2Obj):
+    """
+    工程
+    """
+
     def __init__(self):
         self.package = ""
         self.project = ""
@@ -67,89 +56,149 @@ class AppBean(Dict2Obj):
     def make(self, parser):
         self.make_parser(parser, CONFIG)
 
+    def get_param(self):
+        return {
+            KEY_PACKAGE_NAME: self.package,
+            KEY_PROJECT_NAME: self.project,
+            KEY_PROJECT_DIR: self.projectDir
+        }
+
+
+class BuilderBean(Dict2Obj):
+    """
+    编译
+    """
+
+    def __init__(self):
+        self.gradle = ""
+        self.plugin = ""
+
+    def make(self, parser):
+        self.make_parser(parser, BUILd)
+
+    def get_param(self):
+        return {
+            KEY_GRADLE: self.gradle,
+            KEY_GRADLE_PLUGIN: self.plugin
+        }
+
 
 class PageBean(Dict2Obj):
+    """
+    页面
+    """
+
     def __init__(self):
-        self.subPackage = ""
-        self.type = ""
-        self.view = ""
-        self.itemModel = ""
-        self.adapterName = ""
-        self.pageNum = 0
-        self.types = []
+        self.pageNum = ''
+        self.subPackage = ''
+        self.type = ''
+        self.view = ''
+        self.itemModel = ''
+        self.itemView = ''
+        self.adapterName = ''
+
+        self.pageName = ''
+        self.subPath = ''
+
+        self.page_fragment = {
+            KEY_PACKAGE_NAME: "",
+            KEY_PAGE_NAME: "",
+            KEY_PAGE_SUB_PATH: "",
+            KEY_PAGE_VIEW_NAME: ""
+        }
+
+        self.presenter = {
+            KEY_PACKAGE_NAME: "",
+            KEY_PAGE_NAME: "",
+            KEY_PAGE_SUB_PATH: "",
+        }
+
+        self.view = {
+            KEY_PACKAGE_NAME: "",
+            KEY_PAGE_NAME: "",
+            KEY_PAGE_SUB_PATH: "",
+        }
 
     def is_adapter(self):
-        return 'a' in self.types
+        return TYPE_A in self.types
+
+    def is_mvp(self):
+        return TYPE_MVP in self.types
+
+    def __get_types(self):
+        self.types = self.type.rstrip("|").lstrip("|").split("|")
+        return self.types
 
     def make(self, parser, pageName):
         self.pageNum = pageName
         self.make_parser(parser, pageName)
+        (self.pageName, self.subPath) = self.get_path_param(self.subPackage)
+        # (modelName, modelPath) = self.get_path_param(self.itemModel)
+        self.__make_fragment()
+        self.__make_view()
 
-        (pageName, subPath) = self.get_path_param(self.subPackage)
-        (modelName, modelPath) = self.get_path_param(self.itemModel)
+    def __make_fragment(self):
+        self.page_fragment[KEY_PAGE_NAME] = self.pageName
+        self.page_fragment[KEY_PAGE_NAME_LOWCASE] = "fragment_" + self.pageName.lower()
+        self.page_fragment[KEY_PAGE_SUB_PATH] = self.subPath
 
-        self.types = self.type.rstrip("|").lstrip("|").split("|")
+    def __make_view(self):
+        self.view[KEY_PAGE_NAME] = self.pageName
+        self.view[KEY_PAGE_SUB_PATH] = self.subPath
 
-        adapterName = ""
-        if 'a' in self.types:
-            adapterName = self.adapterName
+    def __make_presenter(self):
+        self.presenter[KEY_PAGE_NAME] = self.pageName
+        self.presenter[KEY_PAGE_SUB_PATH] = self.subPath
 
-        params = {
-            "page_name": pageName,
-            "sub_path": subPath,
-            'model_name': modelName,
-            'model_path': modelPath,
-            'adapter_name': adapterName,
-            'types': self.types,
-        }
-
-        return params
+    def get_param(self):
+        return self.page_fragment, self.view, self.presenter
 
 
-class AppConfig:
+class AppParser:
+
     def __init__(self, config_file):
         self.config_file = config_file
         self.__configParser = ConfigParser.ConfigParser()
         self.__configParser.read(config_file)
-        self.appBean = None
+        self.projectBean = ProjectBean()
+        self.buildBean = BuilderBean()
         self.pages = []
 
-    def get_value(self, section, key, default=""):
+    def __get_value(self, section, key, default=""):
         if self.__configParser.has_option(section, key):
             return self.__configParser.get(section, key)
         else:
             return default
 
-    def get_java_source_path(self):
-        return ""
-
-    def parser(self):
-        pass
-
     def parse_config(self):
-        self.appBean = AppBean()
-        self.appBean.make(self.get_value)
+        parser = self.__get_value
+        # parse
+        self.projectBean.make(parser)
+        self.buildBean.make(parser)
+        self.make_pages()
 
+    def make_pages(self):
         sections = self.__configParser.sections()
         for i in range(0, 100):
             name = PGAE + str(i)
             if name in sections:
                 ret = PageBean()
-                ret.make(self.get_value, name)
+                ret.make(self.__get_value, name)
                 self.pages.append(ret)
 
-    def get_app_bean(self):
-        return self.appBean
+    def get_project_bean(self):
+        return self.projectBean
+
+    def get_build_bean(self):
+        return self.buildBean
 
     def get_pages(self):
         return self.pages
 
 
 if __name__ == '__main__':
-    # config = AppConfig("./app.config")
-    # config.parse_config()
-    #
-    # print(config.get_pages()[0].log())
-    #
+    config = AppParser("./app.config")
+    config.parse_config()
+    print(config.get_pages()[0].log())
 
-    pageBean = PageBean()
+    # pageBean = PageBean()

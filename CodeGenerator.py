@@ -1,5 +1,8 @@
-from ProjectParser import PageBean, AppConfig
+from CreateProject import AndroidProjectCreator
+from ProjectParser import PageBean, AppParser
 from tool.TemplateUtil import cp_file, template_file
+from tool.Constant import *
+import os
 
 
 class BaseGenerator:
@@ -11,37 +14,42 @@ class BaseGenerator:
 
 
 class PageGenerator(BaseGenerator):
-    def __init__(self, pageBean, appBean):
-        self.relative_path = "/res/mvp/"
-        BaseGenerator.__init__(self)
-        self.pageBean = pageBean
-        self.appBean = appBean
-        self.source_files = {
-            'fragment': 'Fragment.java',
-            'fragmentWithAdapter': 'FragmentWithAdapter.java',
-            'view': "IView.java",
-            'presenter': 'Presenter.java',
-            'presenterWithAdapter': 'PresenterWithAdapter.java',
-            'model': 'ModelBean.java'
-        }
 
-    def __get_path(self, path):
-        return self.relative_path + path
+    @staticmethod
+    def get_path(root, sub1="", sub2="", sub3=""):
+        return os.path.join(root, sub1, sub2, sub3)
+
+    def __init__(self, pageBeans, projectBean):
+        BaseGenerator.__init__(self)
+
+        self.project_name = projectBean.project
+        self.package_name = projectBean.package
+        self.projectDir = projectBean.projectDir
+        self.package_name_path = self.package_name.replace(".", "/")
+        self.current_dir = AndroidProjectCreator.get_current_dir()
+        self.source_dir = self.get_path(self.current_dir, RES_MVP)
+        self.dst_dir = self.get_path(self.current_dir, self.projectDir)
+
+        self.pages = pageBeans
+        # page path
+        self.src_root_path = self.get_path(self.dst_dir, JAVA_SRC_PATH, self.package_name_path)
 
     def make_param(self):
         pass
 
-    def generate_fragment(self):
-        if self.pageBean.is_adapter():
-            sourceFile = self.source_files['fragmentWithAdapter']
-        else:
-            sourceFile = self.source_files['fragment']
+    def __make_file(self):
+        pass
 
-        dstFileName = self.pageBean.get_fragment_name()
-        dstDir = self.appBean.get_java_source_path()
-        sourceFilePath = self.__get_path(sourceFile)
-        dstFullFile = dstDir + dstFileName
+    def generate_fragment(self, pageBean):
+        pageSubPath = pageBean.subPackage
+
+        src_file = self.get_path(self.source_dir, FRAGMENT)
+        dst_file = self.get_path(self.src_root_path)
+        
+
+
         cp_file(sourceFilePath, dstFullFile)
+
         template_file(dstFullFile, {
             "page_name": '',
         })
@@ -53,35 +61,15 @@ class PageGenerator(BaseGenerator):
         pass
 
     def generate(self):
-        """"
-        FragmentWithAdapter:
-                        page_name["xxx"],
-                        sub_path,
-                        layout_prama[""],
-                        layout_type[Grid, Linear] ,
-                        adapter_name,
-                        model_name,
-                        page_name_lowcase
-
-        Adapter: package_name
-                 sub_path
-                 adapter_name
-                 model_path
-                 model_name
-                 page_name
-                 adapter_name_lowcase
-        return:
-        """
         pass
 
 
 if __name__ == '__main__':
-    config = AppConfig("./app.config")
+    config = AppParser("./app.config")
     config.parse_config()
 
-    tm1 = config.get_app_bean()
-    tm2 = config.get_pages()
+    projectBean = config.get_project_bean()
+    pages = config.get_pages()
 
-    tm1.log()
-    for item in tm2:
-        item.log()
+    coder = PageGenerator(pages, projectBean)
+    coder.generate()

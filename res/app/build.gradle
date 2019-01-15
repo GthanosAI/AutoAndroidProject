@@ -6,7 +6,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath '${gradle_build_version}'
+        classpath '${plugin}'
         
 
         // NOTE: Do not place your application dependencies here; they belong

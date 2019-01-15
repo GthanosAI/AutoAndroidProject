@@ -1,16 +1,21 @@
 from string import Template
 import shutil, os, stat
 import io
+from Constant import *
 
 
 def template_file(source, param):
     with io.open(source, 'r', encoding='utf-8') as tf:
         content = tf.read()
-
+    content = content.encode('utf-8')
     new_content = template_text(content, param)
     with open(source, 'w') as fp:
         fp.write(new_content)
     return source
+
+
+def template_file_param(param):
+    template_file(param[KEY_PARAM_FILE], param[KEY_PARAM_PARAM])
 
 
 def list_file(root, suffix=None):
