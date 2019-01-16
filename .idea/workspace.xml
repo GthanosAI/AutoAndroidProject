@@ -2,30 +2,131 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f945f7bf-ce0f-4389-b1ee-998fc940d108" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/BussGenerator.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/res/app/app/src/main/java/com/ifog/myapplication/base/DomainProvider.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/res/app/app/src/main/java/com/ifog/myapplication/base/IMultiDomain.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/res/app/app/src/main/java/com/ifog/myapplication/tools/EncryptUtil.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/res/app/app/src/main/java/com/ifog/myapplication/tools/StringUtil.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tool/Logger.py" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/CodeGenerator.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/CreateProject.py" afterPath="$PROJECT_DIR$/CreateProject.py" />
-      <change beforePath="$PROJECT_DIR$/ProjectParser.py" afterPath="$PROJECT_DIR$/ProjectParser.py" />
-      <change beforePath="$PROJECT_DIR$/app.config" afterPath="$PROJECT_DIR$/app.config" />
-      <change beforePath="$PROJECT_DIR$/app.keystore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
-      <change beforePath="$PROJECT_DIR$/new.log" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/res/app/app/build.gradle" afterPath="$PROJECT_DIR$/res/app/app/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/res/app/app/src/main/java/com/ifog/myapplication/base/Api.java" afterPath="$PROJECT_DIR$/res/app/app/src/main/java/com/ifog/myapplication/base/Api.java" />
-      <change beforePath="$PROJECT_DIR$/res/app/app/src/main/java/com/ifog/myapplication/base/ApiClient.java" afterPath="$PROJECT_DIR$/res/app/app/src/main/java/com/ifog/myapplication/base/ApiClient.java" />
-      <change beforePath="$PROJECT_DIR$/res/app/mbase" afterPath="$PROJECT_DIR$/res/app/mbase" />
-      <change beforePath="$PROJECT_DIR$/res/mvp/Fragment.java" afterPath="$PROJECT_DIR$/res/mvp/Fragment.java" />
-      <change beforePath="$PROJECT_DIR$/res/mvp/FragmentWithAdapter.java" afterPath="$PROJECT_DIR$/res/mvp/FragmentWithAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/res/mvp/IView.java" afterPath="$PROJECT_DIR$/res/mvp/IView.java" />
-      <change beforePath="$PROJECT_DIR$/tool/Constant.py" afterPath="$PROJECT_DIR$/tool/Constant.py" />
-      <change beforePath="$PROJECT_DIR$/tool/TemplateUtil.py" afterPath="$PROJECT_DIR$/tool/TemplateUtil.py" />
-      <change beforePath="$PROJECT_DIR$/tool/ViewHierarchy.py" afterPath="$PROJECT_DIR$/tool/ViewHierarchy.py" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.gradle/4.6/fileChanges/last-build.bin" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.gradle/4.6/fileContent/fileContent.lock" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.gradle/4.6/fileHashes/fileHashes.bin" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.gradle/4.6/fileHashes/fileHashes.lock" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.gradle/4.6/fileHashes/resourceHashesCache.bin" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.gradle/4.6/taskHistory/taskHistory.bin" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.gradle/4.6/taskHistory/taskHistory.lock" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.gradle/buildOutputCleanup/cache.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.gradle/buildOutputCleanup/outputFiles.bin" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.gradle/vcsWorkingDirs/gc.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/caches/build_file_checksums.ser" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/codeStyles/Project.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/encodings.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/gradle.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__android_arch_core_common_1_0_0_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__android_arch_lifecycle_common_1_0_3_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__android_arch_lifecycle_runtime_1_0_3.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__com_android_databinding_adapters_3_2_0_rc03.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__com_android_databinding_baseLibrary_3_2_0_rc03_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__com_android_databinding_library_3_2_0_rc03.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__com_android_support_animated_vector_drawable_27_0_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__com_android_support_appcompat_v7_27_0_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_1_1_3.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_solver_1_1_3_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__com_android_support_multidex_1_0_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__com_android_support_multidex_instrumentation_1_0_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__com_android_support_recyclerview_v7_27_0_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__com_android_support_support_annotations_27_0_2_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__com_android_support_support_annotations_27_1_1_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__com_android_support_support_compat_27_0_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__com_android_support_support_core_ui_27_0_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__com_android_support_support_core_utils_27_0_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__com_android_support_support_fragment_27_0_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__com_android_support_support_media_compat_27_0_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__com_android_support_support_v13_27_0_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__com_android_support_support_v4_27_0_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__com_android_support_support_vector_drawable_27_0_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_core_2_2_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_core_3_0_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_idling_resource_2_2_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_idling_resource_3_0_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__com_android_support_test_exposed_instrumentation_api_publish_0_5.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__com_android_support_test_monitor_1_0_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__com_android_support_test_rules_0_5.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__com_android_support_test_runner_0_5.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__com_android_support_test_runner_1_0_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__com_facebook_stetho_stetho_1_4_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__com_facebook_stetho_stetho_okhttp3_1_4_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__com_github_bumptech_glide_annotations_4_6_1_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__com_github_bumptech_glide_disklrucache_4_6_1_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__com_github_bumptech_glide_gifdecoder_4_6_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__com_github_bumptech_glide_glide_4_6_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_2_0_1_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__com_google_code_gson_gson_2_6_1_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__com_jakewharton_retrofit_retrofit2_rxjava2_adapter_1_0_0_RC3_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__com_squareup_javawriter_2_1_1_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__com_squareup_okhttp3_okhttp_3_4_2_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__com_squareup_okio_okio_1_9_0_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__com_squareup_retrofit2_converter_gson_2_0_1_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__com_squareup_retrofit2_retrofit_2_1_0_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__commons_cli_commons_cli_1_2_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__io_reactivex_rxjava2_rxandroid_2_0_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__io_reactivex_rxjava2_rxjava_2_0_1_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__javax_annotation_javax_annotation_api_1_2_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__javax_inject_javax_inject_1_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__junit_junit_4_12_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__net_sf_kxml_kxml2_2_3_0_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__org_hamcrest_hamcrest_integration_1_3_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/libraries/Gradle__org_reactivestreams_reactive_streams_1_0_0_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/misc.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/modules.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/runConfigurations.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/.idea/workspace.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/app/.gitignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/app/app.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/app/build.gradle" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/app/proguard-rules.pro" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/app/src/androidTest/java/com/ifog/demo/ExampleInstrumentedTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/app/src/main/AndroidManifest.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/app/src/main/java/com/ifog/demo/MainActivity.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/app/src/main/java/com/ifog/demo/base/Api.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/app/src/main/java/com/ifog/demo/base/ApiClient.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/app/src/main/java/com/ifog/demo/base/BaseMvpDsFragment.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/app/src/main/java/com/ifog/demo/base/DomainProvider.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/app/src/main/java/com/ifog/demo/base/IMultiDomain.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/app/src/main/java/com/ifog/demo/mine/IMineView.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/app/src/main/java/com/ifog/demo/mine/MineFragment.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/app/src/main/java/com/ifog/demo/mine/MinePresenter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/app/src/main/java/com/ifog/demo/tools/EncryptUtil.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/app/src/main/java/com/ifog/demo/tools/StringUtil.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/app/src/main/res/drawable/ic_launcher_background.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/app/src/main/res/layout/activity_main.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/app/src/main/res/layout/fragment_mine.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/app/src/main/res/values/colors.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/app/src/main/res/values/strings.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/app/src/main/res/values/styles.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/auto_app_config" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/build.gradle" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/config.gradle" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/demo.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/gradle.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/gradle/wrapper/gradle-wrapper.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/gradle/wrapper/gradle-wrapper.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/gradlew" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/gradlew.bat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/local.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/mbase" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/settings.gradle" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/output/demo/tmptest.iml" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -50,7 +151,7 @@
         <entry file="file://$PROJECT_DIR$/app.config">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="491">
-              <caret line="42" column="20" lean-forward="true" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
+              <caret line="42" column="20" lean-forward="false" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -259,9 +360,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="21" />
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-39" />
+    <option name="y" value="310" />
     <option name="width" value="1895" />
     <option name="height" value="1057" />
   </component>
@@ -304,23 +405,13 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="AutoAndroidProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="AutoAndroidProject" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AutoAndroidProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutoAndroidProject" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AutoAndroidProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutoAndroidProject" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AutoAndroidProject" type="b2602c69:ProjectViewProjectNode" />
@@ -440,7 +531,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -617,7 +707,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="21" y="23" width="1895" height="1057" extended-state="0" />
+    <frame x="-39" y="310" width="1895" height="1057" extended-state="0" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -625,10 +715,9 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4195953" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25985092" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2779277" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.280626" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938075" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -638,6 +727,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938075" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -836,7 +926,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="429">
           <caret line="55" column="13" lean-forward="false" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -931,7 +1020,7 @@
     <entry file="file://$PROJECT_DIR$/app.config">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="491">
-          <caret line="42" column="20" lean-forward="true" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
+          <caret line="42" column="20" lean-forward="false" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
           <folding />
         </state>
       </provider>
