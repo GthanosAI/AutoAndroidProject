@@ -46,10 +46,17 @@ def cp_dir(source, dst):
     shutil.copytree(src=source, dst=dst)
 
 
-def cp_file(source, dest):
-    shutil.copy(src=source, dst=dest)
+def cp_file(source, dst):
+    shutil.copy(src=source, dst=dst)
+
+
+def create_path(path):
+    path = os.path.dirname(path)
+    if not os.path.exists(path):
+        os.makedirs(path)
 
 
 if __name__ == '__main__':
-    ret = list_file("/Users/jacky/PycharmProjects/AutoAndroidProject/res/app/app/src/main/java", suffix='java')
-    print(ret)
+    cp_file("./a", "./b.txt")
+    # ret = list_file("/Users/jacky/PycharmProjects/AutoAndroidProject/res/app/app/src/main/java", suffix='java')
+    # print(ret)

@@ -19,7 +19,7 @@ TEST_SRC_PATH = '/app/src/androidTest/java/com/ifog/myapplication'
 JAVA_SRC_PATH = '/app/src/main/java/'
 JAVA_TEST_SRC_PATH = '/app/src/androidTest/java/'
 
-APP_RES = "/app/src/mian/res"
+APP_RES_LAYOUT = "/app/src/main/res/layout"
 
 # relative_path
 RES_APP = '/res/app'
@@ -35,6 +35,11 @@ KEY_PROJECT_NAME = 'project_name'
 KEY_PROJECT_DIR = 'project_dir'
 
 # page key
+TEMPLATE_PRESENTER = '${page_name}Presenter.java'
+TEMPLATE_VIEW = 'I${page_name}View.java'
+TEMPLATE_FRAGMENT = '${page_name}Fragment.java'
+TEMPLATE_VIEW_LAYOUT = 'fragment_${page_name_lowcase}.xml'
+
 KEY_FRAGMENT = "fragment"
 KEY_FRAGMENT_WITH_ADAPTER = "fragmentWithAdapter"
 KEY_IVIEW = "iview"
@@ -49,6 +54,11 @@ KEY_PAGE_MODEL_NAME = "model_name"
 KEY_PAGE_MODEL_PATH = "mode_name"
 KEY_ADAPTER_NAME = "adapter_name"
 KEY_PAGE_VIEW_NAME = 'page_view_name'
+
+KEY_VIEW_LAYOUT_NAME = "view_layout_name"
+KEY_VIEW_VALUE = "view_value"
+KEY_VIEW_ROOT = 'view_root'
+
 # template
 KEY_PARAM_FILE = 'file'
 KEY_PARAM_PARAM = 'param'

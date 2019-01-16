@@ -2,18 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f945f7bf-ce0f-4389-b1ee-998fc940d108" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/tool/Constant.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/BussGenerator.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/res/app/app/src/main/java/com/ifog/myapplication/base/DomainProvider.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/res/app/app/src/main/java/com/ifog/myapplication/base/IMultiDomain.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/res/app/app/src/main/java/com/ifog/myapplication/tools/EncryptUtil.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/res/app/app/src/main/java/com/ifog/myapplication/tools/StringUtil.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tool/Logger.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/CodeGenerator.py" afterPath="$PROJECT_DIR$/CodeGenerator.py" />
+      <change beforePath="$PROJECT_DIR$/CodeGenerator.py" afterPath="" />
       <change beforePath="$PROJECT_DIR$/CreateProject.py" afterPath="$PROJECT_DIR$/CreateProject.py" />
       <change beforePath="$PROJECT_DIR$/ProjectParser.py" afterPath="$PROJECT_DIR$/ProjectParser.py" />
       <change beforePath="$PROJECT_DIR$/app.config" afterPath="$PROJECT_DIR$/app.config" />
-      <change beforePath="$PROJECT_DIR$/res/app/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/res/app/app/src/main/AndroidManifest.xml" />
-      <change beforePath="$PROJECT_DIR$/res/app/build.gradle" afterPath="$PROJECT_DIR$/res/app/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/res/app/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/res/app/gradle/wrapper/gradle-wrapper.properties" />
+      <change beforePath="$PROJECT_DIR$/app.keystore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
+      <change beforePath="$PROJECT_DIR$/new.log" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/res/app/app/build.gradle" afterPath="$PROJECT_DIR$/res/app/app/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/res/app/app/src/main/java/com/ifog/myapplication/base/Api.java" afterPath="$PROJECT_DIR$/res/app/app/src/main/java/com/ifog/myapplication/base/Api.java" />
+      <change beforePath="$PROJECT_DIR$/res/app/app/src/main/java/com/ifog/myapplication/base/ApiClient.java" afterPath="$PROJECT_DIR$/res/app/app/src/main/java/com/ifog/myapplication/base/ApiClient.java" />
+      <change beforePath="$PROJECT_DIR$/res/app/mbase" afterPath="$PROJECT_DIR$/res/app/mbase" />
       <change beforePath="$PROJECT_DIR$/res/mvp/Fragment.java" afterPath="$PROJECT_DIR$/res/mvp/Fragment.java" />
-      <change beforePath="$PROJECT_DIR$/res/mvp/Presenter.java" afterPath="$PROJECT_DIR$/res/mvp/Presenter.java" />
+      <change beforePath="$PROJECT_DIR$/res/mvp/FragmentWithAdapter.java" afterPath="$PROJECT_DIR$/res/mvp/FragmentWithAdapter.java" />
+      <change beforePath="$PROJECT_DIR$/res/mvp/IView.java" afterPath="$PROJECT_DIR$/res/mvp/IView.java" />
+      <change beforePath="$PROJECT_DIR$/tool/Constant.py" afterPath="$PROJECT_DIR$/tool/Constant.py" />
       <change beforePath="$PROJECT_DIR$/tool/TemplateUtil.py" afterPath="$PROJECT_DIR$/tool/TemplateUtil.py" />
+      <change beforePath="$PROJECT_DIR$/tool/ViewHierarchy.py" afterPath="$PROJECT_DIR$/tool/ViewHierarchy.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,162 +35,126 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/AutoAndroidProject$CodeGenerator__1_.coverage" NAME="CodeGenerator (1) Coverage Results" MODIFIED="1544717520266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/AutoAndroidProject$TemplateUtil.coverage" NAME="TemplateUtil Coverage Results" MODIFIED="1543803229074" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/AutoAndroidProject$main.coverage" NAME="main Coverage Results" MODIFIED="1543803252412" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/AutoAndroidProject$CreateProject.coverage" NAME="CreateProject Coverage Results" MODIFIED="1547539229217" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/AutoAndroidProject$CodeGenerator__1_.coverage" NAME="CodeGenerator (1) Coverage Results" MODIFIED="1547615126944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/AutoAndroidProject$TemplateUtil.coverage" NAME="TemplateUtil Coverage Results" MODIFIED="1547605599812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tool" />
+    <SUITE FILE_PATH="coverage/AutoAndroidProject$CreateProject.coverage" NAME="CreateProject Coverage Results" MODIFIED="1547609490360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/AutoAndroidProject$main.coverage" NAME="main Coverage Results" MODIFIED="1547621559349" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/AutoAndroidProject$CodeGenerator.coverage" NAME="CodeGenerator Coverage Results" MODIFIED="1547535461467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/AutoAndroidProject$ViewConstant.coverage" NAME="ViewConstant Coverage Results" MODIFIED="1544420919879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/AutoAndroidProject$ComponentCreate.coverage" NAME="ComponentCreate Coverage Results" MODIFIED="1544437229842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/AutoAndroidProject$ViewHierarchy.coverage" NAME="ViewHierarchy Coverage Results" MODIFIED="1545736047023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tool" />
+    <SUITE FILE_PATH="coverage/AutoAndroidProject$ViewHierarchy.coverage" NAME="ViewHierarchy Coverage Results" MODIFIED="1547607549755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tool" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.55135477">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="app.config" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app.config">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="387">
-                  <caret line="26" column="8" lean-forward="true" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="CodeGenerator.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/CodeGenerator.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="289">
-                  <caret line="34" column="28" lean-forward="true" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
-                  <folding>
-                    <element signature="e#0#47#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ntpath.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/venv/lib/python2.7/ntpath.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="61" column="27" lean-forward="true" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="27" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Presenter.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/res/mvp/Presenter.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="120">
-                  <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="PresenterWithAdapter.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/res/mvp/PresenterWithAdapter.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="new.log" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/new.log">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ApiClient.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/res/app/app/src/main/java/com/ifog/myapplication/base/ApiClient.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="465">
-                  <caret line="31" column="55" lean-forward="false" selection-start-line="31" selection-start-column="55" selection-end-line="31" selection-end-column="55" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="TemplateUtil.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/tool/TemplateUtil.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
-                  <caret line="21" column="14" lean-forward="false" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="IView.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/res/mvp/IView.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="105">
-                  <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="ProjectParser.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/ProjectParser.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="533">
-                  <caret line="154" column="0" lean-forward="true" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#15#34#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="AutoAndroidProject.iml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/.idea/AutoAndroidProject.iml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Constant.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/tool/Constant.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="120">
-                  <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="8" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="CreateProject.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/CreateProject.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1455">
-                  <caret line="146" column="103" lean-forward="false" selection-start-line="146" selection-start-column="103" selection-end-line="146" selection-end-column="103" />
-                  <folding>
-                    <element signature="e#0#95#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="app.config" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app.config">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="491">
+              <caret line="42" column="20" lean-forward="true" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProjectParser.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ProjectParser.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding>
+                <element signature="e#15#34#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CreateProject.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CreateProject.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#95#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Api.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/app/app/src/main/java/com/ifog/myapplication/base/Api.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApiClient.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/app/app/src/main/java/com/ifog/myapplication/base/ApiClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="645">
+              <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StringUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/app/app/src/main/java/com/ifog/myapplication/tools/StringUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EncryptUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/app/app/src/main/java/com/ifog/myapplication/tools/EncryptUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="30" lean-forward="false" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Logger.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tool/Logger.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="27" lean-forward="false" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TemplateUtil.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tool/TemplateUtil.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="23" column="40" lean-forward="false" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+              <folding>
+                <element signature="e#0#27#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -189,36 +165,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>configbean</find>
-      <find>src_path</find>
-      <find>java_test_src_path</find>
-      <find>project</find>
-      <find>param</find>
-      <find>delimiter</find>
-      <find>getsi</find>
-      <find>print</find>
-      <find>settings.gradle</find>
-      <find>APP_BUILD_FILE</find>
-      <find>CodeConfig</find>
-      <find>GradleGenerator</find>
-      <find>GRADLE_PLUGIN_FILE</find>
-      <find>code</find>
-      <find>package_name</find>
-      <find>sett</find>
-      <find>R</find>
-      <find>proje</find>
-      <find>BUILd</find>
+      <find>page_name_lowcase</find>
+      <find>os.</find>
+      <find>getpah</find>
+      <find>return os.path.join(root, sub1.lstrip('/'), sub2.lstrip('/'), sub3.lstrip('/'))</find>
+      <find>pa</find>
+      <find>pagevuew</find>
+      <find>pageName =</find>
       <find>ra</find>
+      <find>os.j</find>
       <find>pageName</find>
-      <find>get_current_dir</find>
-      <find>projectBean</find>
-      <find>self.package_name</find>
-      <find>dst_dir</find>
-      <find>r</find>
-      <find>pageBeans</find>
+      <find>project_name</find>
+      <find>presenter</find>
+      <find>KEY_PACKAGE_NAME</find>
+      <find>__make_presenter</find>
+      <find>KEY_PAGE_NAME</find>
+      <find>viewLayoutParam</find>
+      <find>res_layout_path</find>
       <find>subPath</find>
-      <find>subPackage</find>
-      <find>projectDir</find>
+      <find>view</find>
+      <find>KEY_PAGE_SUB_PATH</find>
+      <find>sub_path</find>
+      <find>fragment_mine</find>
+      <find>build</find>
+      <find>config</find>
+      <find>print</find>
+      <find>page_view_name</find>
+      <find>KEY_PAGE_VIEW_NAME</find>
+      <find>EncryptUtil</find>
+      <find>PARAM_KEY</find>
+      <find>r</find>
     </findStrings>
     <replaceStrings>
       <replace>=</replace>
@@ -235,9 +211,6 @@
         <option value="$PROJECT_DIR$/create_project.py" />
         <option value="$PROJECT_DIR$/TemplateUtil.py" />
         <option value="$PROJECT_DIR$/res/app/config.gradle" />
-        <option value="$PROJECT_DIR$/res/app/app/build.gradle" />
-        <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/res/app/app/src/main/java/com/ifog/myapplication/base/Api.java" />
         <option value="$PROJECT_DIR$/res/app/settings.gradle" />
         <option value="$PROJECT_DIR$/res/app/app/src/main/java/com/ifog/myapplication/base/BaseMvpDsFragment.java" />
         <option value="$PROJECT_DIR$/res/model/ModelBean.java" />
@@ -247,26 +220,36 @@
         <option value="$PROJECT_DIR$/app.config.backup" />
         <option value="$PROJECT_DIR$/ViewConstant.py" />
         <option value="$PROJECT_DIR$/res/adapter/Adapter.java" />
-        <option value="$PROJECT_DIR$/res/mvp/FragmentWithAdapter.java" />
-        <option value="$PROJECT_DIR$/res/mvp/IView.java" />
         <option value="$PROJECT_DIR$/ConfigParser.py" />
-        <option value="$PROJECT_DIR$/tool/ViewConstant.py" />
         <option value="$PROJECT_DIR$/tool/fragment_layout.xml" />
-        <option value="$PROJECT_DIR$/tool/ViewHierarchy.py" />
         <option value="$PROJECT_DIR$/res/app/gradle/wrapper/gradle-wrapper.properties" />
         <option value="$PROJECT_DIR$/res/app/build.gradle" />
         <option value="$PROJECT_DIR$/res/app/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/output/com/ifog/luckybox/app/src/main/java/com/ifog/luckybox/base/Api.java" />
         <option value="$PROJECT_DIR$/output/com/ifog/luckybox/app/src/main/java/com/ifog/luckybox/base/ApiClient.java" />
-        <option value="$PROJECT_DIR$/res/app/app/src/main/java/com/ifog/myapplication/base/ApiClient.java" />
-        <option value="$PROJECT_DIR$/tool/TemplateUtil.py" />
         <option value="$PROJECT_DIR$/res/mvp/Presenter.java" />
-        <option value="$PROJECT_DIR$/app.config" />
-        <option value="$PROJECT_DIR$/res/mvp/Fragment.java" />
-        <option value="$PROJECT_DIR$/ProjectParser.py" />
-        <option value="$PROJECT_DIR$/CreateProject.py" />
+        <option value="$PROJECT_DIR$/tool/ViewConstant.py" />
         <option value="$PROJECT_DIR$/tool/Constant.py" />
+        <option value="$PROJECT_DIR$/output/luckybox/app/src/main/res/layout/fragment_mine.xml" />
+        <option value="$PROJECT_DIR$/tool/ViewHierarchy.py" />
+        <option value="$PROJECT_DIR$/output/luckybox/app/src/main/java/com/ifog/luckybox/mine/IMineView.java" />
+        <option value="$PROJECT_DIR$/res/mvp/Fragment.java" />
+        <option value="$PROJECT_DIR$/res/mvp/FragmentWithAdapter.java" />
+        <option value="$PROJECT_DIR$/res/mvp/IView.java" />
+        <option value="$PROJECT_DIR$/ProjectParser.py" />
+        <option value="$PROJECT_DIR$/res/app/app/build.gradle" />
+        <option value="$PROJECT_DIR$/res/app/app/src/main/java/com/ifog/myapplication/base/IMultiDomain.java" />
+        <option value="$PROJECT_DIR$/res/app/app/src/main/java/com/ifog/myapplication/base/DomainProvider.java" />
         <option value="$PROJECT_DIR$/CodeGenerator.py" />
+        <option value="$PROJECT_DIR$/tool/TemplateUtil.py" />
+        <option value="$PROJECT_DIR$/CreateProject.py" />
+        <option value="$PROJECT_DIR$/tool/Logger.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/res/app/app/src/main/java/com/ifog/myapplication/tools/StringUtil.java" />
+        <option value="$PROJECT_DIR$/res/app/app/src/main/java/com/ifog/myapplication/tools/EncryptUtil.java" />
+        <option value="$PROJECT_DIR$/res/app/app/src/main/java/com/ifog/myapplication/base/Api.java" />
+        <option value="$PROJECT_DIR$/res/app/app/src/main/java/com/ifog/myapplication/base/ApiClient.java" />
+        <option value="$PROJECT_DIR$/app.config" />
       </list>
     </option>
   </component>
@@ -276,9 +259,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="43" />
-    <option name="y" value="80" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="21" />
+    <option name="y" value="23" />
     <option name="width" value="1895" />
     <option name="height" value="1057" />
   </component>
@@ -320,13 +303,24 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="AutoAndroidProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="AutoAndroidProject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AutoAndroidProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutoAndroidProject" type="462c0819:PsiDirectoryNode" />
+              <item name="output" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AutoAndroidProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutoAndroidProject" type="462c0819:PsiDirectoryNode" />
+              <item name="output" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AutoAndroidProject" type="b2602c69:ProjectViewProjectNode" />
@@ -367,7 +361,75 @@
               <item name="AutoAndroidProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="AutoAndroidProject" type="462c0819:PsiDirectoryNode" />
               <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="mvp" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AutoAndroidProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutoAndroidProject" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AutoAndroidProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutoAndroidProject" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ifog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AutoAndroidProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutoAndroidProject" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ifog" type="462c0819:PsiDirectoryNode" />
+              <item name="myapplication" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AutoAndroidProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutoAndroidProject" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ifog" type="462c0819:PsiDirectoryNode" />
+              <item name="myapplication" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AutoAndroidProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutoAndroidProject" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ifog" type="462c0819:PsiDirectoryNode" />
+              <item name="myapplication" type="462c0819:PsiDirectoryNode" />
+              <item name="tools" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AutoAndroidProject" type="b2602c69:ProjectViewProjectNode" />
@@ -378,7 +440,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -389,8 +451,8 @@
     <property name="last_opened_file_path" value="$USER_HOME$/projs/pythonprjs/data_maker" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="androipr&#9;null&#9;null&#10;androidp&#9;FILE&#9;file:///Users/jacky/PycharmProjects/AutoAndroidProject/.idea/AutoAndroidProject.iml&#10;android&#9;null&#9;null&#10;page&#9;null&#9;null&#10;confi&#9;FILE&#9;file:///Users/jacky/PycharmProjects/AutoAndroidProject/app.config&#10;presen&#9;FILE&#9;file:///Users/jacky/PycharmProjects/AutoAndroidProject/res/mvp/Presenter.java&#10;fragm&#9;FILE&#9;file:///Users/jacky/PycharmProjects/AutoAndroidProject/res/mvp/Fragment.java&#10;PresenterWithAdapter&#9;FILE&#9;file:///Users/jacky/PycharmProjects/AutoAndroidProject/res/mvp/PresenterWithAdapter.java&#10;creat&#9;FILE&#9;file:///Users/jacky/PycharmProjects/AutoAndroidProject/CreateProject.py&#10;apic&#9;FILE&#9;file:///Users/jacky/PycharmProjects/AutoAndroidProject/output/com/ifog/luckybox/app/src/main/java/com/ifog/luckybox/base/ApiClient.java&#10;settings.gradle&#9;FILE&#9;file:///Users/jacky/PycharmProjects/AutoAndroidProject/output/com/ifog/luckybox/settings.gradle&#10;cons&#9;FILE&#9;file:///Users/jacky/PycharmProjects/AutoAndroidProject/tool/Constant.py&#10;config&#9;null&#9;null&#10;FragmentWithAdapter&#9;FILE&#9;file:///Users/jacky/PycharmProjects/AutoAndroidProject/res/mvp/FragmentWithAdapter.java&#10;codege&#9;FILE&#9;file:///Users/jacky/PycharmProjects/AutoAndroidProject/CodeGenerator.py&#10;fragmentAdapter&#9;FILE&#9;file:///Users/jacky/PycharmProjects/AutoAndroidProject/res/mvp/FragmentWithAdapter.java&#10;auto&#9;FILE&#9;file:///Users/jacky/PycharmProjects/AutoAndroidProject/res/app/auto_app_config" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="SearchEverywhereHistoryKey" value="cre&#9;FILE&#9;file:///Users/jacky/PycharmProjects/AutoAndroidProject/CreateProject.py&#10;gra&#9;FILE&#9;file:///Users/jacky/PycharmProjects/AutoAndroidProject/res/app/settings.gradle&#10;pres&#9;FILE&#9;file:///Users/jacky/PycharmProjects/AutoAndroidProject/output/luckybox/app/src/main/java/com/ifog/luckybox/mine/MinePresenter.java&#10;const&#9;FILE&#9;file:///Users/jacky/PycharmProjects/AutoAndroidProject/tool/Constant.py&#10;app.c&#9;FILE&#9;file:///Users/jacky/PycharmProjects/AutoAndroidProject/app.config&#10;fragme&#9;FILE&#9;file:///Users/jacky/PycharmProjects/AutoAndroidProject/res/mvp/Fragment.java&#10;androipr&#9;null&#9;null&#10;androidp&#9;FILE&#9;file:///Users/jacky/PycharmProjects/AutoAndroidProject/.idea/AutoAndroidProject.iml&#10;android&#9;null&#9;null&#10;page&#9;null&#9;null&#10;confi&#9;FILE&#9;file:///Users/jacky/PycharmProjects/AutoAndroidProject/app.config&#10;presen&#9;FILE&#9;file:///Users/jacky/PycharmProjects/AutoAndroidProject/res/mvp/Presenter.java&#10;fragm&#9;FILE&#9;file:///Users/jacky/PycharmProjects/AutoAndroidProject/res/mvp/Fragment.java&#10;PresenterWithAdapter&#9;FILE&#9;file:///Users/jacky/PycharmProjects/AutoAndroidProject/res/mvp/PresenterWithAdapter.java&#10;creat&#9;FILE&#9;file:///Users/jacky/PycharmProjects/AutoAndroidProject/CreateProject.py&#10;apic&#9;FILE&#9;file:///Users/jacky/PycharmProjects/AutoAndroidProject/output/com/ifog/luckybox/app/src/main/java/com/ifog/luckybox/base/ApiClient.java&#10;settings.gradle&#9;FILE&#9;file:///Users/jacky/PycharmProjects/AutoAndroidProject/output/com/ifog/luckybox/settings.gradle&#10;cons&#9;FILE&#9;file:///Users/jacky/PycharmProjects/AutoAndroidProject/tool/Constant.py&#10;config&#9;null&#9;null&#10;FragmentWithAdapter&#9;FILE&#9;file:///Users/jacky/PycharmProjects/AutoAndroidProject/res/mvp/FragmentWithAdapter.java&#10;codege&#9;FILE&#9;file:///Users/jacky/PycharmProjects/AutoAndroidProject/CodeGenerator.py&#10;fragmentAdapter&#9;FILE&#9;file:///Users/jacky/PycharmProjects/AutoAndroidProject/res/mvp/FragmentWithAdapter.java&#10;auto&#9;FILE&#9;file:///Users/jacky/PycharmProjects/AutoAndroidProject/res/app/auto_app_config" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -400,17 +462,17 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/res/mvp" />
-      <recent name="$PROJECT_DIR$/res" />
-      <recent name="$PROJECT_DIR$/tmp" />
-      <recent name="$PROJECT_DIR$/res/app/app/src/main/java/com/ifog/myapplication/base" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/res/mvp" />
       <recent name="$PROJECT_DIR$/tool" />
       <recent name="$PROJECT_DIR$/res/adapter" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/res/app/app/src/main/java/com/ifog/myapplication" />
+      <recent name="$PROJECT_DIR$/res/app/app/src/main/java/com/ifog/myapplication/base" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/res/mvp" />
+      <recent name="$PROJECT_DIR$/res" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -425,7 +487,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.CreateProject">
+  <component name="RunManager" selected="Python.main">
     <configuration name="CodeGenerator (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -439,45 +501,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="AutoAndroidProject" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CodeGenerator.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="CodeGenerator" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="AutoAndroidProject" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ProjectParser.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="ComponentCreate" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="AutoAndroidProject" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ComponentCreate.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BussGenerator.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -502,6 +526,25 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="TemplateUtil" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tool" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="AutoAndroidProject" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tool/TemplateUtil.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="ViewHierarchy" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -521,20 +564,39 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="AutoAndroidProject" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.CodeGenerator" />
-      <item index="1" class="java.lang.String" itemvalue="Python.ComponentCreate" />
-      <item index="2" class="java.lang.String" itemvalue="Python.ViewHierarchy" />
-      <item index="3" class="java.lang.String" itemvalue="Python.CodeGenerator (1)" />
-      <item index="4" class="java.lang.String" itemvalue="Python.CreateProject" />
+      <item index="0" class="java.lang.String" itemvalue="Python.ViewHierarchy" />
+      <item index="1" class="java.lang.String" itemvalue="Python.CodeGenerator (1)" />
+      <item index="2" class="java.lang.String" itemvalue="Python.CreateProject" />
+      <item index="3" class="java.lang.String" itemvalue="Python.TemplateUtil" />
+      <item index="4" class="java.lang.String" itemvalue="Python.main" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.CreateProject" />
-        <item index="1" class="java.lang.String" itemvalue="Python.CodeGenerator" />
-        <item index="2" class="java.lang.String" itemvalue="Python.ViewHierarchy" />
-        <item index="3" class="java.lang.String" itemvalue="Python.CodeGenerator (1)" />
-        <item index="4" class="java.lang.String" itemvalue="Python.ComponentCreate" />
+        <item index="0" class="java.lang.String" itemvalue="Python.main" />
+        <item index="1" class="java.lang.String" itemvalue="Python.CodeGenerator (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Python.CreateProject" />
+        <item index="3" class="java.lang.String" itemvalue="Python.ViewHierarchy" />
+        <item index="4" class="java.lang.String" itemvalue="Python.TemplateUtil" />
       </list>
     </recent_temporary>
   </component>
@@ -555,23 +617,22 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="43" y="80" width="1895" height="1057" extended-state="0" />
-    <editor active="true" />
+    <frame x="21" y="23" width="1895" height="1057" extended-state="0" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.03088392" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938075" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28115016" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14355099" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4195953" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25985092" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2779277" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938075" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47390842" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31522897" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -588,6 +649,13 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/BussGenerator.py</url>
+          <line>46</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
@@ -598,418 +666,273 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="48" />
+      <option name="time" value="52" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/res/mvp/FragmentWithAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="29" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/mvp/ModelBean.java">
+    <entry file="file://$PROJECT_DIR$/output/com/ifog/luckybox/app/src/main/java/com/ifog/luckybox/base/BaseMvpDsFragment.java" />
+    <entry file="file://$PROJECT_DIR$/output/com/ifog/luckybox/app/src/main/java/com/ifog/luckybox/MainActivity.java" />
+    <entry file="file://$PROJECT_DIR$/output/com/ifog/luckybox/app/src/main/java/com/ifog/luckybox/base/ApiClient.java" />
+    <entry file="file://$PROJECT_DIR$/output/com/ifog/luckybox/app/src/main/java/com/ifog/luckybox/base/Api.java" />
+    <entry file="file://$PROJECT_DIR$/new.log" />
+    <entry file="file://$PROJECT_DIR$/.idea/AutoAndroidProject.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="36" lean-forward="false" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="36" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tool/a" />
+    <entry file="file://$PROJECT_DIR$/tool/b.txt" />
     <entry file="file://$PROJECT_DIR$/tool/ViewConstant.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1383">
-          <caret line="167" column="22" lean-forward="false" selection-start-line="167" selection-start-column="22" selection-end-line="167" selection-end-column="22" />
+        <state relative-caret-position="-15">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tool/ViewHierarchy.py">
+    <entry file="file://$PROJECT_DIR$/tool/fragment_layout.xml" />
+    <entry file="file://$PROJECT_DIR$/venv/lib/python2.7/os.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="38" column="32" lean-forward="false" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
-          <folding />
+        <state relative-caret-position="197">
+          <caret line="156" column="0" lean-forward="false" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.config.backup">
+    <entry file="file://$PROJECT_DIR$/venv/lib/python2.7/ntpath.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="6" lean-forward="false" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/app/gradle.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/app/local.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/app/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="53" lean-forward="false" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/app/gradle/wrapper/gradle-wrapper.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="5" column="28" lean-forward="false" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-          <folding />
+        <state relative-caret-position="298">
+          <caret line="68" column="37" lean-forward="false" selection-start-line="68" selection-start-column="37" selection-end-line="68" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/ConfigParser.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="553">
-          <caret line="214" column="45" lean-forward="true" selection-start-line="214" selection-start-column="45" selection-end-line="214" selection-end-column="45" />
-          <folding />
+          <caret line="214" column="45" lean-forward="false" selection-start-line="214" selection-start-column="45" selection-end-line="214" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2017.3/python_stubs/971724280/__builtin__.py">
+    <entry file="file://$PROJECT_DIR$/output/app/src/main/java/com/ifog/luckybox/mine/MineFragment.java" />
+    <entry file="file://$PROJECT_DIR$/output/luckybox/app/src/main/res/layout/fragment_mine.xml" />
+    <entry file="file://$PROJECT_DIR$/tool/ViewHierarchy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="4337" column="8" lean-forward="false" selection-start-line="4337" selection-start-column="8" selection-end-line="4337" selection-end-column="8" />
-          <folding />
+        <state relative-caret-position="272">
+          <caret line="39" column="19" lean-forward="false" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/output/com.ifog.luckybox/gradle.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output/com.ifog.luckybox/config.gradle">
+    <entry file="file://$PROJECT_DIR$/output/luckybox/app/src/main/res/layout/activity_main.xml" />
+    <entry file="file://$PROJECT_DIR$/res/mvp/Fragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/output/com.ifog.luckybox/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output/com.ifog.luckybox/app/src/main/AndroidManifest.xml">
+    <entry file="file://$PROJECT_DIR$/res/mvp/FragmentWithAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output/com.ifog.luckybox/app/src/main/java/com/ifog/luckybox/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/string.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="203" column="33" lean-forward="true" selection-start-line="203" selection-start-column="33" selection-end-line="203" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/app/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/app/app/src/main/java/com/ifog/myapplication/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output/com/ifog/luckybox/mbase/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output/com/ifog/luckybox/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output/com/ifog/luckybox/gradle/wrapper/gradle-wrapper.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output/com/ifog/luckybox/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output/com/ifog/luckybox/config.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output/com/ifog/luckybox/gradle.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output/com/ifog/luckybox/gradlew">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output/com/ifog/luckybox/gradlew.bat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/app/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output/com/ifog/luckybox/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output/com/ifog/luckybox/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output/com/ifog/luckybox/local.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output/com/ifog/luckybox/app/src/main/java/com/ifog/luckybox/base/BaseMvpDsFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-116">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output/com/ifog/luckybox/app/src/main/java/com/ifog/luckybox/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/app/app/src/main/java/com/ifog/myapplication/base/ApiClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="55" lean-forward="false" selection-start-line="31" selection-start-column="55" selection-end-line="31" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output/com/ifog/luckybox/app/src/main/java/com/ifog/luckybox/base/ApiClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="62" column="23" lean-forward="true" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output/com/ifog/luckybox/app/src/main/java/com/ifog/luckybox/base/Api.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="29" lean-forward="false" selection-start-line="0" selection-start-column="29" selection-end-line="0" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool/TemplateUtil.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="21" column="14" lean-forward="false" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/mvp/PresenterWithAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/new.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
+          <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/mvp/IView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/mvp/Fragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="36" lean-forward="false" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/AutoAndroidProject.iml">
+    <entry file="file://$PROJECT_DIR$/res/mvp/ModelBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/mvp/PresenterWithAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/mvp/Presenter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="45">
+          <caret line="3" column="22" lean-forward="false" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/lib/python2.7/ntpath.py">
+    <entry file="file://$PROJECT_DIR$/output/luckybox/app/src/main/java/com/ifog/luckybox/MainActivity.java" />
+    <entry file="file://$PROJECT_DIR$/output/luckybox/app/src/main/java/com/ifog/luckybox/base/Api.java" />
+    <entry file="file://$PROJECT_DIR$/output/luckybox/app/src/main/java/com/ifog/luckybox/base/ApiClient.java" />
+    <entry file="file://$PROJECT_DIR$/output/luckybox/app/src/main/java/com/ifog/luckybox/base/BaseMvpDsFragment.java" />
+    <entry file="file://$PROJECT_DIR$/output/luckybox/app/src/main/java/com/ifog/luckybox/mine/MinePresenter.java" />
+    <entry file="file://$PROJECT_DIR$/output/luckybox/app/src/main/java/com/ifog/luckybox/mine/IMineView.java" />
+    <entry file="file://$PROJECT_DIR$/output/luckybox/app/src/main/java/com/ifog/luckybox/mine/MineFragment.java" />
+    <entry file="file://$PROJECT_DIR$/res/app/settings.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="61" column="27" lean-forward="true" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="27" />
-          <folding />
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CreateProject.py">
+    <entry file="file://$PROJECT_DIR$/res/app/gradlew">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1455">
-          <caret line="146" column="103" lean-forward="false" selection-start-line="146" selection-start-column="103" selection-end-line="146" selection-end-column="103" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="31" lean-forward="true" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/app/app/src/main/java/com/ifog/myapplication/base/IMultiDomain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/app/app/src/main/java/com/ifog/myapplication/base/DomainProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="16" lean-forward="false" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/app/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="36" lean-forward="false" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/app/app/src/main/java/com/ifog/myapplication/base/BaseMvpDsFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BussGenerator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="95" column="10" lean-forward="false" selection-start-line="95" selection-start-column="4" selection-end-line="95" selection-end-column="10" />
           <folding>
-            <element signature="e#0#95#0" expanded="true" />
+            <element signature="e#0#47#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tool/Constant.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="8" />
+        <state relative-caret-position="429">
+          <caret line="55" column="13" lean-forward="false" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.config">
+    <entry file="file://$PROJECT_DIR$/tool/TemplateUtil.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="26" column="8" lean-forward="true" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+        <state relative-caret-position="300">
+          <caret line="23" column="40" lean-forward="false" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CreateProject.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#95#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/creator.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tool/Logger.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="27" lean-forward="false" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/app/app/src/main/java/com/ifog/myapplication/tools/LogToFileUtils.java" />
+    <entry file="file://$PROJECT_DIR$/res/app/app/src/main/java/com/ifog/myapplication/tools/StringUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/app/app/src/main/java/com/ifog/myapplication/tools/EncryptUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="30" lean-forward="false" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/app/app/src/main/java/com/ifog/myapplication/base/Api.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/app/app/src/main/java/com/ifog/myapplication/base/ApiClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ProjectParser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="154" column="0" lean-forward="true" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
+        <state relative-caret-position="180">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
             <element signature="e#15#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CodeGenerator.py">
+    <entry file="file://$PROJECT_DIR$/app.config">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="34" column="28" lean-forward="true" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="491">
+          <caret line="42" column="20" lean-forward="true" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>

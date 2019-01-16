@@ -1,6 +1,5 @@
 package ${package_name}.base;
 
-
 import java.util.List;
 
 import cn.com.earth.net.basemodel.BaseModelData;
@@ -14,7 +13,7 @@ import retrofit2.http.POST;
 import retrofit2.http.Path;
 import retrofit2.http.Query;
 
-import static ${package_name}.base.IMultiDomain.I_BASE;
+import static ${package_name}.base.IMultiDomain.I_API;
 
 public interface Api {
 

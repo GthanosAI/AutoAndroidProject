@@ -172,4 +172,4 @@ if __name__ == '__main__':
     # c = ContentViewHierarchy(a)
     # c.make()
 
-    make('L', '[c[i,c[i,i,i,t,i,t]]]', 'fragment_layout.xml')
+    make('L', '[c[c[i,i,r[i],i,i],i],c[i,i]]', 'fragment_layout.xml')

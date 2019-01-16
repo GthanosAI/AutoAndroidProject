@@ -34,7 +34,7 @@ class Dict2Obj(object):
             fileName = paths[-1]
             subPath = ''
 
-        return fileName, subPath
+        return fileName.replace("Fragment", ''), subPath
 
     def get_param(self):
         return None
@@ -92,31 +92,36 @@ class PageBean(Dict2Obj):
         self.pageNum = ''
         self.subPackage = ''
         self.type = ''
-        self.view = ''
+        self.viewParam = ''
         self.itemModel = ''
         self.itemView = ''
         self.adapterName = ''
-
         self.pageName = ''
         self.subPath = ''
+        self.viewLayout = ""
 
-        self.page_fragment = {
+        self.pageFragmentParam = {
             KEY_PACKAGE_NAME: "",
             KEY_PAGE_NAME: "",
             KEY_PAGE_SUB_PATH: "",
             KEY_PAGE_VIEW_NAME: ""
         }
 
-        self.presenter = {
+        self.presenterParam = {
             KEY_PACKAGE_NAME: "",
             KEY_PAGE_NAME: "",
             KEY_PAGE_SUB_PATH: "",
         }
 
-        self.view = {
+        self.viewParam = {
             KEY_PACKAGE_NAME: "",
             KEY_PAGE_NAME: "",
             KEY_PAGE_SUB_PATH: "",
+        }
+
+        self.viewLayoutParam = {
+            KEY_VIEW_VALUE: "",
+            KEY_VIEW_ROOT: '',
         }
 
     def is_adapter(self):
@@ -136,22 +141,29 @@ class PageBean(Dict2Obj):
         # (modelName, modelPath) = self.get_path_param(self.itemModel)
         self.__make_fragment()
         self.__make_view()
+        self.__make_presenter()
+        self.__make_view_layout()
 
     def __make_fragment(self):
-        self.page_fragment[KEY_PAGE_NAME] = self.pageName
-        self.page_fragment[KEY_PAGE_NAME_LOWCASE] = "fragment_" + self.pageName.lower()
-        self.page_fragment[KEY_PAGE_SUB_PATH] = self.subPath
+        self.pageFragmentParam[KEY_PAGE_NAME] = self.pageName
+        self.pageFragmentParam[KEY_PAGE_VIEW_NAME] = "fragment_" + self.pageName.lower()
+        self.pageFragmentParam[KEY_PAGE_SUB_PATH] = self.subPath
 
     def __make_view(self):
-        self.view[KEY_PAGE_NAME] = self.pageName
-        self.view[KEY_PAGE_SUB_PATH] = self.subPath
+        self.viewParam[KEY_PAGE_NAME] = self.pageName
+        self.viewParam[KEY_PAGE_SUB_PATH] = self.subPath
+
+    def __make_view_layout(self):
+        items = self.viewLayout.split('|')
+        self.viewLayoutParam[KEY_VIEW_ROOT] = items[0]
+        self.viewLayoutParam[KEY_VIEW_VALUE] = items[1]
 
     def __make_presenter(self):
-        self.presenter[KEY_PAGE_NAME] = self.pageName
-        self.presenter[KEY_PAGE_SUB_PATH] = self.subPath
+        self.presenterParam[KEY_PAGE_NAME] = self.pageName
+        self.presenterParam[KEY_PAGE_SUB_PATH] = self.subPath
 
     def get_param(self):
-        return self.page_fragment, self.view, self.presenter
+        return self.pageFragmentParam, self.viewParam, self.presenter
 
 
 class AppParser:

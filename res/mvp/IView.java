@@ -1,4 +1,4 @@
-package ${package_name}.{sub_path};
+package ${package_name}.${sub_path};
 
 import cn.com.earth.mvp.IEarthBaseView;
 

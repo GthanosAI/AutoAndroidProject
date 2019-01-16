@@ -4,12 +4,6 @@ from tool.Constant import *
 from ProjectParser import AppParser
 import logging
 
-logging.basicConfig(level=logging.DEBUG,
-                    filename='new.log',
-                    filemode='a',
-                    format=
-                    '%(asctime)s - %(filename)s[line:%(lineno)d] - %(levelname)s: %(message)s'
-                    )
 
 
 class Generator:
@@ -111,6 +105,7 @@ class AndroidProjectCreator:
 
         self.current_dir = AndroidProjectCreator.get_current_dir()
         self.source_dir = self.current_dir + RES_APP
+
         self.dst_dir = self.get_path(self.current_dir,
                                      self.projectDir,
                                      self.project_name)
@@ -124,13 +119,13 @@ class AndroidProjectCreator:
 
     @staticmethod
     def get_path(root, sub1="", sub2="", sub3=""):
-        return os.path.join(root, sub1, sub2, sub3)
+        ret = os.path.join(root, sub1.lstrip('/'), sub2.lstrip('/'), sub3.lstrip('/'))
+        return ret.rstrip('/')
 
     def make(self):
         # 1 make output dir
         if os.path.exists(self.dst_dir):
             shutil.rmtree(self.dst_dir)
-
         cp_dir(self.source_dir, self.dst_dir)
 
         # 2.1

@@ -1,4 +1,4 @@
-package ${package_name}.{sub_path};
+package ${package_name}.${sub_path};
 
 import ${package_name}.R;
 import ${package_name}.base.BaseMvpDsFragment;
